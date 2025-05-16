@@ -1,9 +1,23 @@
-import Image from "next/image";
+"use client";
 import Attribution from "./attribution";
+import { use, useState } from "react";
 
 export default function Home() {
+  const [sequence, setSequence] = useState<number>(1);
+
+  const goPreviousSequence = () => {
+    if (sequence > 1) {
+      setSequence(sequence - 1);
+    }
+  };
+  const goNextSequence = () => {
+    if (sequence < 5) {
+      setSequence(sequence + 1);
+    }
+  };
   return (
     <div>
+      <span>currentsequence: {sequence}</span>
       {/*
 <!-- Sidebar start -->
 
@@ -53,7 +67,12 @@ export default function Home() {
 
     <!-- Step 5 end -->
 */}
-      <h1>thing</h1>
+      <button className="border" onClick={goPreviousSequence}>
+        Go previous
+      </button>
+      <button className="border" onClick={goNextSequence}>
+        Go next
+      </button>
       <Attribution />
     </div>
   );
