@@ -12,15 +12,28 @@ Your challenge is to build out this multi-step form and get it looking as close 
 
 Your users should be able to:
 
-- Complete each step of the sequence
-- Go back to a previous step to update their selections
-- See a summary of their selections on the final step and confirm their order
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- Receive form validation messages if:
-  - A field has been missed
-  - The email address is not formatted correctly
-  - A step is submitted, but no selection has been made
+- should see a summary of their selections on the final step and confirm their order
+- View
+
+  - View the optimal layout for the interface depending on their device's screen size
+  - See hover and focus states for all interactive elements on the page
+
+- Functionality
+
+  - Complete each step of the sequence, including:
+
+    - Your info
+    - Select plan
+    - Add-ons
+    - Summary
+
+  - Go back to a previous step to update their selections
+  - See a summary of their selections on the final step and confirm their order
+  - View the optimal layout for the interface depending on their device's screen size
+  - Receive form validation messages if:
+    - A field has been missed
+    - The email address is not formatted correctly
+    - A step is submitted, but no selection has been made
 
 Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
