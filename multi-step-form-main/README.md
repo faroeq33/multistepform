@@ -1,18 +1,13 @@
 # Frontend Mentor - Multi-step form
 
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
 ## The challenge
+
+Welcome!👋
 
 Your challenge is to build out this multi-step form and get it looking as close to the design as possible.
 
 Your users should be able to:
 
-- should see a summary of their selections on the final step and confirm their order
 - View
 
   - View the optimal layout for the interface depending on their device's screen size
@@ -27,15 +22,12 @@ Your users should be able to:
     - Add-ons
     - Summary
 
+  - Should see a summary of their selections on the final step and confirm their order
   - Go back to a previous step to update their selections
-  - See a summary of their selections on the final step and confirm their order
-  - View the optimal layout for the interface depending on their device's screen size
   - Receive form validation messages if:
     - A field has been missed
     - The email address is not formatted correctly
     - A step is submitted, but no selection has been made
-
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
 ## Where to find files, fonts, styles & images
 

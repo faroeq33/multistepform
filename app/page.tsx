@@ -1,9 +1,17 @@
 "use client";
 import Attribution from "./attribution";
-import { use, useState } from "react";
+import { useState } from "react";
 
 export default function Home() {
   const [sequence, setSequence] = useState<number>(1);
+
+  const steps = [
+    { id: 1, name: "Your info" },
+    { id: 2, name: "Select plan" },
+    { id: 3, name: "Add-ons" },
+    { id: 4, name: "Summary" },
+    { id: 5, name: "Thank you!" },
+  ];
 
   const goPreviousSequence = () => {
     if (sequence > 1) {
@@ -15,8 +23,19 @@ export default function Home() {
       setSequence(sequence + 1);
     }
   };
+
   return (
     <div>
+      <div className="sidebar">
+        {steps.map((step) => (
+          <div key={step.id} className="sidebar__step">
+            <span className={sequence === step.id ? "active" : ""}>
+              Step {step.id}
+            </span>
+            <span>{step.name}</span>
+          </div>
+        ))}
+      </div>
       <span>currentsequence: {sequence}</span>
       {/*
 <!-- Sidebar start -->
